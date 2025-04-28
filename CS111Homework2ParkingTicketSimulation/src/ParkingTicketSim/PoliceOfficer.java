@@ -23,6 +23,10 @@ public class PoliceOfficer {
 		}
 	}
 	
+	public String toString() {
+		return "Officer Data:\nName: " + this.name + "\nBadge Number: " + this.badgeNumber;
+	}
+	
 	public void setName(String name) {
 		this.name = name;
 	}
