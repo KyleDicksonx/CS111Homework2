@@ -35,6 +35,12 @@ public class ParkingTicket {
 		}	
 	}
 	
+	public String toString() {
+		return car.toString() + "\n" + officer.toString() + "\n"
+					+ "Minutes Illegaly Parked: " + (car.getMinutesParked() - this.minutes)
+						+ "\nFine: " + this.fine + "\n";
+	}
+	
 	public void setParkedCar(ParkedCar car) {
 		this.car = car;
 	}
