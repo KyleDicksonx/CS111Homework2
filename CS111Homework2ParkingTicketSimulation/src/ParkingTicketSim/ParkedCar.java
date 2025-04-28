@@ -37,51 +37,43 @@ public class ParkedCar {
 					+ "\nMinutes Parked: " + this.minutesParked;
 	}
 	
-	//equals method to compare two strings //why did I make this red
-	public boolean equals(String thisInput, String compareInput) {
-		if (thisInput.equals(compareInput)) {
-			return true;
+	//make get and set 
+		public void setMake(String make){
+			this.make = make;
 		}
-		else {
-			return false;
+		public String getMake() {
+			return this.make;
 		}
-	}
 	
+	//model get and set
+		public void setModel(String model) {
+			this.model = model;
+		}
+		public String getmodel() {
+			return this.model;
+		}
 	
+	//color get and set
+		public void setColor(String color) {
+			this.color = color;
+		}
+		public String getColor() {
+			return this.color;
+		}
 	
+	//license plate get and set
+		public void setLicensePlate(String licensePlate) {
+			this.licensePlate = licensePlate;
+		}
+		public String getLicensePlate() {
+			return this.licensePlate;
+		}
 	
-	public void setMake(String make){
-		this.make = make;
-	}
-	public String getMake() {
-		return this.make;
-	}
-	
-	public void setModel(String model) {
-		this.model = model;
-	}
-	public String getmodel() {
-		return this.model;
-	}
-	
-	public void setColor(String color) {
-		this.color = color;
-	}
-	public String getColor() {
-		return this.color;
-	}
-	
-	public void setLicensePlate(String licensePlate) {
-		this.licensePlate = licensePlate;
-	}
-	public String getLicensePlate() {
-		return this.licensePlate;
-	}
-	
-	public void setMinutesParked(int minutesParked) {
-		this.minutesParked = minutesParked;
-	}
-	public int getMinutesParked() {
-		return this.minutesParked;
-	}
+	//minutes parked get and set
+		public void setMinutesParked(int minutesParked) {
+			this.minutesParked = minutesParked;
+		}
+		public int getMinutesParked() {
+			return this.minutesParked;
+		}
 }
