@@ -13,6 +13,16 @@ public class PoliceOfficer {
 		this.badgeNumber = officer.badgeNumber;
 	}
 	
+	public ParkingTicket partol(ParkedCar car, ParkingMeter meter) {
+		if(car.getMinutesParked() > meter.getMinutesPurchased()) {
+			ParkingTicket pt = new  ParkingTicket(car, this, meter.getMinutesPurchased());
+			return pt;
+		}
+		else {
+			return null;
+		}
+	}
+	
 	public void setName(String name) {
 		this.name = name;
 	}
