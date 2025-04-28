@@ -26,6 +26,18 @@ public class ParkedCar {
 					+ "\nMinutes Parked: " + this.minutesParked;
 	}
 	
+	public boolean equals(String thisInput, String compareInput) {
+		if (thisInput.equals(compareInput)) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	
+	
+	
 	public void setMake(String make){
 		this.make = make;
 	}
